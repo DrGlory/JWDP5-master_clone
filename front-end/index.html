@@ -34,8 +34,28 @@
         <label for="rech">Dites-nous ce que vous cherchez </label><br>
         <input type="search" placeholder="Entrez votre texte ici" name="recherche" id="rech" aria-label="Search throught site content" class="text-center"><span><i class="fab fa-searchengin"></i></span>
     </header>
+    
     <section class="Oaks">
-        <h4 class="text-center">Meubles en bois de chênes</h4>
+        <!-- Boutton pour appeler les produits à côté -->
+        <span class="text-center font-weight-bold">Meubles en bois de chêne</span><button class="btn btn-primary mt-2 mb-2" onclick='PopulateTableList()'>Montrer</button>
+        <!-- Table -->
+        <table class="table table-image">
+            <thead class="thead-dark">
+                <tr class="text-center">
+                    <th>Image</th>
+                    <th>Nom</th>
+                    <th>Description</th>
+                    <th>Prix</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <!-- Corps de la table avec la liste des produits -->
+            <tbody id="ProductList">
+            </tbody>
+        </table>
+    </section>
+
+<!-- carte des meubles de en chêne 1
         <div class="card">
             <img src="../images/oak_1.jpg" class="card-img-top" alt="image-de-chêne-1">
             <div class="card-body">
@@ -71,8 +91,8 @@
                 <p class="card-text">Chaise, d'un design rare, avec du bois de chêne, découpé, et vernis avec le plus grand soin</p>
             </div>
         </div>  
-    </section>
-    <section class="Teddies">
+    </section> -->
+    <!-- <section class="Teddies">
         <h4 class="text-center">Gamme d'ours en peluche</h4>
         <div class="card">
             <img src="../images/teddy_1.jpg" class="card-img-top" alt="image-de-nounours-1">
@@ -147,7 +167,9 @@
                 <p class="card-text">Vous êtes photographe de métier ? ou par passion ? cet appareil est fait pour vous. En effet ses capacités techniques vous permettrons de prendre des photos de hautes qualités, et de vous faie distinguer tout de suite par vos paires dans le monde professionnel.</p>
             </div>
         </div>  
-    </section> 
+    </section>  -->
+    <!-- Lien Javascript -->
+    <script src="./Hereis.js"></script>
 </body>
 <footer>
     <ul class="list-inline text-center">
