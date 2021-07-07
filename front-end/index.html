@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" type="image/png" href="./images/Orinoco_logo_3.png"> 
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -20,165 +21,32 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
                 <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
             </button>
-            <div id="navbarContent" class="collapse navbar-collapse">
+            <div id="navbarContent" class="collapse navbar-collapse flex justify-content-end">
                 <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="">Oaks</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Teddies</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">vcams</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./PageProduit.html">Produit</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Panier</a></li><i class="fas fa-shopping-cart"></i>
+                    <li class="nav-item active"><a class="nav-link text-body" href="./index.html">Cameras</a></li>
+                    <li class="nav-item"><a class="nav-link text-body" href="./PageProduit.html">Produit</a></li>
+                    <li class="nav-item"><a class="nav-link text-body" href="./PagePanier.html">Panier</a></li><i class="fas fa-shopping-cart pt-2 mt-1"></i>
                 </ul>
             </div>
         </nav>
-        <h2 class="text-center">Bienvenue chez Orinoco !</h2>
-        <label for="rech">Dites-nous ce que vous cherchez </label><br>
-        <input type="search" placeholder="Entrez votre texte ici" name="recherche" id="rech" aria-label="Search throught site content" class="text-center"><span><i class="fab fa-searchengin"></i></span>
+        <div class="back">
+            <h2 class="text-center text-white">Bienvenue chez Orinoco !</h2>
+            <p class="text-center text-white"> Des caméras vintages que le temps ne peut défier</p>
+            <h4 class="text-center text-white">Appareil Reflex</h4>
+        </div>
     </header>
-    
-    <section class="Oaks">
-        <!-- Boutton pour appeler les produits à côté -->
-        <span class="text-center font-weight-bold">Meubles en bois de chêne</span><button class="btn btn-primary mt-2 mb-2" onclick='PopulateTableList()'>Montrer</button>
-        <!-- Table -->
-        <table class="table table-image">
-            <thead class="thead-dark">
-                <tr class="text-center">
-                    <th>Image</th>
-                    <th>Nom</th>
-                    <th>Description</th>
-                    <th>Prix</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <!-- Corps de la table avec la liste des produits -->
-            <tbody id="ProductList">
-            </tbody>
-        </table>
-    </section>
-
-<!-- carte des meubles de en chêne 1
-        <div class="card">
-            <img src="../images/oak_1.jpg" class="card-img-top" alt="image-de-chêne-1">
-            <div class="card-body">
-                <h5 class="card-title">Oak-1</h5>
-                <p class="card-text">Cette sculpture voluptueuse créée uniquement avec du bois de chêne, a été inspiré par le célèbre sculpteur <strong>Noir</strong> Ousmane SOW</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../images/oak_2.jpg" class="card-img-top" alt="image-de-chêne-2">
-            <div class="card-body">
-                <h5 class="card-title">Oak-2</h5>
-                <p class="card-text">Retrouvez un moment conviviale avec une table en bois de chêne simple et flat</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../images/oak_3.jpg" class="card-img-top" alt="image-de-chêne-3">
-            <div class="card-body">
-                <h5 class="card-title">Oak-3</h5>
-                <p class="card-text">Ici, une table design, en chêne inpirée directement de l'apogé du Christianisme au XIII e siècle</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../images/oak_4.jpg" class="card-img-top" alt="image-de-chêne-4">
-            <div class="card-body">
-                <h5 class="card-title">Oak-4</h5>
-                <p class="card-text">Retrouvez avec ce meuble, la vraie sensation de la nature.</p>
-            </div>
-        </div>  
-        <div class="card">
-            <img src="../images/oak_5.jpg" class="card-img-top" alt="image-de-chêne-5">
-            <div class="card-body">
-                <h5 class="card-title">Oak-5</h5>
-                <p class="card-text">Chaise, d'un design rare, avec du bois de chêne, découpé, et vernis avec le plus grand soin</p>
-            </div>
-        </div>  
-    </section> -->
-    <!-- <section class="Teddies">
-        <h4 class="text-center">Gamme d'ours en peluche</h4>
-        <div class="card">
-            <img src="../images/teddy_1.jpg" class="card-img-top" alt="image-de-nounours-1">
-            <div class="card-body">
-                <h5 class="card-title">Teddy-1</h5>
-                <p class="card-text">Ours en peluche originale de 1880. Rien à envier à Ted dans le célèbre film. Retrouvez le même design sur cet oeuvre d'art</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../images/teddy_2.jpg" class="card-img-top" alt="image-de-nounours-2">
-            <div class="card-body">
-                <h5 class="card-title">Teddy-2</h5>
-                <p class="card-text">Ours en peluche spécial enfants. Ancrez vos liens avec vos enfants avec ce magnifique ourson en peluche.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../images/teddy_3.jpg" class="card-img-top" alt="image-de-nounours-3">
-            <div class="card-body">
-                <h5 class="card-title">Teddy-3</h5>
-                <p class="card-text">Idéal pour les parents, ce duo d'ours en peluche vous permettra de créer une ambiance plus que familiale.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../images/teddy_4.jpg" class="card-img-top" alt="image-de-nounours-4">
-            <div class="card-body">
-                <h5 class="card-title">Teddy-4</h5>
-                <p class="card-text">Pensez à votre conjoint ! Ouffrez lui un magnifique ourson tout mignon avec un coeur dessus.</p>
-            </div>
-        </div>  
-        <div class="card">
-            <img src="../images/teddy_5.jpg" class="card-img-top" alt="image-de-nounours-5">
-            <div class="card-body">
-                <h5 class="card-title">Teddy-5</h5>
-                <p class="card-text">Vous vous sentez si seule...Il ou elle vous a laissé tomber ? pas de tristesse lolo est là pour vous réconforter.</p>
-            </div>
-        </div>  
-    </section>
-    <section class="Vcams">
-        <h4 class="text-center">Appareil Reflex</h4>
-        <div class="card">
-            <img src="../images/vcam_1.jpg" class="card-img-top" alt="image-de-reflex-1">
-            <div class="card-body">
-                <h5 class="card-title">Vcam-1</h5>
-                <p class="card-text">Appreil reflex style vintage. Le desegn est unique retrouvez des senstions fortes des belles années 80 avec cet appareil</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../images/vcam_2.jpg" class="card-img-top" alt="image-de-reflex-2">
-            <div class="card-body">
-                <h5 class="card-title">Vcam-2</h5>
-                <p class="card-text">Raffiné, élégant, discret, destiné à la grandeur, ici l'appareil reflex le plus respecté au monde.Se glisse tout simplement dans votre sac.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../images/vcam_3.jpg" class="card-img-top" alt="image-de-reflex-3">
-            <div class="card-body">
-                <h5 class="card-title">Vcam-3</h5>
-                <p class="card-text">Vous êtes passionné de technologie ? d'architecture unique et exaltant ? cet appareil est conçue pour les geek comme vous. Vous y retrouverrez des gadgets digne de James Bond à la simple tenue de cet appreil.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../images/vcam_4.jpg" class="card-img-top" alt="image-de-reflex-4">
-            <div class="card-body">
-                <h5 class="card-title">Vcam-4</h5>
-                <p class="card-text">Minolla, une marque sûre. elégant, simple, avec son abjectif de 50 mm, capturez vos plus beaux moments.</p>
-            </div>
-        </div>  
-        <div class="card">
-            <img src="../images/vcam_5.jpg" class="card-img-top" alt="image-de-reflex-5">
-            <div class="card-body">
-                <h5 class="card-title">Vcam-5</h5>
-                <p class="card-text">Vous êtes photographe de métier ? ou par passion ? cet appareil est fait pour vous. En effet ses capacités techniques vous permettrons de prendre des photos de hautes qualités, et de vous faie distinguer tout de suite par vos paires dans le monde professionnel.</p>
-            </div>
-        </div>  
-    </section>  -->
-    <!-- Lien Javascript -->
-    <script src="./Hereis.js"></script>
+    <section class="Vcams-container">   
+    </section> 
+    <script src="./JavaScript/Objets.js"></script>
+    <script src="./JavaScript/Index.js"></script>
 </body>
 <footer>
-    <ul class="list-inline text-center">
-        <li class="list-inline-item">Mentions légales</li>
-        <li class="list-inline-item"><i class="fab fa-instagram"></i></li>
-        <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
-        <li class="list-inline-item"><i class="fab fa-instagram"></i></li>
-        <li class="list-inline-item">contact</li>
-        <li class="list-inline-item"></li>
+    <ul class="list-inline text-center bg-dark p-3">
+        <li class="list-inline-item text-white">Mentions légales</li>
+        <li class="list-inline-item text-white"><i class="fab fa-instagram"></i></li>
+        <li class="list-inline-item text-white"><i class="fab fa-twitter"></i></li>
+        <li class="list-inline-item text-white"><i class="fab fa-facebook-square"></i></li>
+        <li class="list-inline-item text-white">contact</li>
     </ul>
 </footer>
 </html>

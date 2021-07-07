@@ -24,4 +24,8 @@ app.use('/api/cameras', cameraRoutes);
 app.use('/api/teddies', teddyRoutes);
 app.use('/api/furniture', furnitureRoutes);
 
+// app.post('/api', (request, response) => {
+//  console.log(request);
+// });
+
 module.exports = app;
